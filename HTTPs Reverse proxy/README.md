@@ -14,6 +14,11 @@ Modules headers, rewrite and proxy_wstunnel are required for protecting the Remo
 $ sudo a2enmod authnz_ldap proxy_http  ssl  headers rewrite proxy_wstunnel && \
  sudo a2dissite 000-default 
 ```
+Disable port 80 listening for apache2 and comment the line Listen 80.
+```
+$ sudo vi /etc/apache2/ports.conf
+#Listen 80
+```
 Upload the private RSA key file in the directory /etc/ssl/private/.
 
 Upload the ssl certifcate file in the directory /etc/ssl/certs/.
