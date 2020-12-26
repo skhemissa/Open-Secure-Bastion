@@ -5,7 +5,7 @@ Update the system then install apache2.
 ```
 $ sudo apt update && \ 
  sudo apt upgrade -y && \
- sudo install apache2 -y --no-install-recommends
+ sudo apt install apache2 -y --no-install-recommends
 ```
 Activate required apache2 modules then desactivate default site.
 
