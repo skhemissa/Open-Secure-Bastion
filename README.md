@@ -2,6 +2,25 @@
 
 All components work with the following LDAP configuration [Secure OpenLDAP server on Debian 10 Buster](https://github.com/skhemissa/Secure-OpenLDAP-Debian)
 
+ldap.ldif provides a minimal structure for the LDAP directory including three users and two groups.
+
+Provided groups are used in the configuration of each service hosted in the Open Secure Bastion:
+* Members of "web1,ou=groups,dc=test,dc=local" are allowed for accessing a backend web application named web1 protected by the HTTPs Reverse proxy;
+* Members of "cn=guacamole,ou=groups,dc=test,dc=local" are allowed for accessing the Remote Access Gateway.
+... users could be members of multiple groups.
+
+Don't forget to generate a password for each accout.
+```
+$ /sbin/slappasswd
+New password:
+Re-enter new password:
+{SSHA}<password>
+```
+Then import the structure.
+```
+$ sudo ldapadd -x -H ldaps://localhost -D cn=admin,dc=test,dc=local -W -f ldap.ldif
+```
+
 ## HTTPs Reverse proxy
 Based on Apache2 with mod_proxy... and several other modules.
 For protecting:
