@@ -44,7 +44,7 @@ This action is going to take a very very very very very very very long time.
 ```
 $ sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 4096
 ```
-Copy the file reverse_https.conf located in the directory conf of this project in the directory /etc/apache2/sites-enabled/ in the reverse server.
+Copy the file reverse_https.conf located in the directory conf of this project in the directory /etc/apache2/sites-available/ in the reverse server.
 
 Update SSLCertificateFile and SSLCertificateKeyFile paths if you are using certificate files with a specific naming convention.
 
