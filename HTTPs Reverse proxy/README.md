@@ -37,7 +37,6 @@ Organization Name (eg, company) []:
 Organizational Unit Name (eg, section) []:
 Common Name (eg, fully qualified host name) []: reverse.test.local
 Email Address []:
-
 ```
 Activate perfect forward secrecy, which generates ephemeral session keys.
 
