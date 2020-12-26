@@ -19,6 +19,10 @@ Disable port 80 listening for apache2 and comment the line Listen 80.
 $ sudo vi /etc/apache2/ports.conf
 #Listen 80
 ```
+Blank page for index.html
+```
+$ echo "-" | sudo tee /var/www/html/index.html
+```
 Upload the private RSA key file in the directory /etc/ssl/private/.
 
 Upload the ssl certifcate file in the directory /etc/ssl/certs/.
