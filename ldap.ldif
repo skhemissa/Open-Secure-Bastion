@@ -9,18 +9,40 @@ ou: groups
 dn: uid=usertest,ou=people,dc=test,dc=local
 objectClass: inetOrgPerson
 objectClass: shadowAccount
-cn: last_name
-sn: first_name
+objectClass: posixAccount
+cn: user_test
+sn: user_test
 uid: usertest
 userPassword: {SSHA}<password>
+loginShell: /bin/bash
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /home/usertest
 
 dn: uid=user1,ou=people,dc=test,dc=local
 objectClass: inetOrgPerson
 objectClass: shadowAccount
-cn: last_name
-sn: first_name
+objectClass: posixAccount
+cn: user1
+sn: user1
 uid: user1
 userPassword: {SSHA}}<password>
+loginShell: /bin/bash
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /home/user1
+
+dn: cn=usertest,ou=groups,dc=srv,dc=world
+objectClass: posixGroup
+cn: usertest
+gidNumber: 2000
+memberUid: usertest
+
+dn: cn=user1,ou=groups,dc=srv,dc=world
+objectClass: posixGroup
+cn: user1
+gidNumber: 2000
+memberUid: user1
 
 dn: uid=guacadmin,ou=people,dc=test,dc=local
 objectClass: inetOrgPerson
