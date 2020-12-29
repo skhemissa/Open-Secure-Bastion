@@ -9,7 +9,7 @@ Provided groups are used in the configuration of each service hosted in the Open
 * Members of "cn=guacamole,ou=groups,dc=test,dc=local" are allowed for accessing the Remote Access Gateway.
 ... users could be members of multiple groups.
 
-Don't forget to generate a password for each accout.
+Don't forget to generate a password for each account.
 ```
 $ /sbin/slappasswd
 New password:
