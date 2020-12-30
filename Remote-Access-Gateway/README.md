@@ -35,7 +35,7 @@ $ cd /tmp && \
 ## Tomcat installation and configuration
 Prerequisites installation
 ```
-$ sudo apt install default-jdk -y && \
+$ sudo apt install default-jdk -y --no-install-recommends && \
  sudo groupadd tomcat && \
  sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 ```
