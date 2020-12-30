@@ -3,7 +3,7 @@ Work on Debian 10 (Buster)
 
 Update the system then install apache2.
 ```
-$ sudo apt update && \ 
+$ sudo apt update && \
  sudo apt upgrade -y && \
  sudo apt install apache2 -y --no-install-recommends
 ```
