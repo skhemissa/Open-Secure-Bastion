@@ -32,13 +32,13 @@ uidNumber: 2000
 gidNumber: 2000
 homeDirectory: /home/user1
 
-dn: cn=usertest,ou=groups,dc=srv,dc=world
+dn: cn=usertest,ou=groups,dc=test,dc=local
 objectClass: posixGroup
 cn: usertest
 gidNumber: 2000
 memberUid: usertest
 
-dn: cn=user1,ou=groups,dc=srv,dc=world
+dn: cn=user1,ou=groups,dc=test,dc=local
 objectClass: posixGroup
 cn: user1
 gidNumber: 2000
