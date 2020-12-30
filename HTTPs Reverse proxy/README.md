@@ -1,6 +1,11 @@
 # HTTPs Reverse proxy
 Work on Debian 10 (Buster)
 
+Todo
+
+- [ ] explain security features activated
+- [ ] add mod_security
+
 Update the system then install apache2.
 ```
 $ sudo apt update && \
