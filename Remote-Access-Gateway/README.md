@@ -95,7 +95,7 @@ $ sudo systemctl daemon-reload && \
 ```
 $ sudo apt update && \
  sudo apt upgrade -y && \
- sudo apt install postgresql logrotate --no-install-recommends
+ sudo apt install postgresql logrotate -y --no-install-recommends
 ```
 
 Configure a database for Apache Guacamole then create an account for accessing this database.
