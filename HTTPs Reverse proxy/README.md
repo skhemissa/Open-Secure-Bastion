@@ -5,6 +5,7 @@ Todo
 
 - [ ] explain security features activated
 - [ ] add mod_security
+- [ ] Dockerisation
 
 Update the system then install apache2.
 ```
