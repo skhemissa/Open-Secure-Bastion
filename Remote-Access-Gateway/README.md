@@ -16,6 +16,7 @@ The user is automatically created in the Remote Access Gateway: connections and/
 Download the following components from [Apache Guacamole release page](https://guacamole.apache.org/releases/).
 * Source code: guacamole-server-*.tar.gz
 * Extensions:
+  * guacamole-*.war
   * guacamole-auth-jdbc-*.tar.gz
   * guacamole-auth-header-*.tar.gz
 
